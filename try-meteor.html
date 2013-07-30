@@ -1,0 +1,46 @@
+<head>
+	<title>Edit Me!</title>
+  	<meta charset="utf-8">
+    <title>Edit Me!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Loading my styles -->
+    <link href="try-meteor.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+</head>
+<body>
+  	<div class="container-fluid contentMain">
+        <nav class="text_title">
+          <hgroup>
+            <h2>Edit Me!</h2>
+          </hgroup>
+        </nav>
+        <div class="row-fluid">
+          <div class="span12">
+            <div class="row-fluid">
+              <div class="content_textarea draggable ui-widget-content ui-draggable">
+                	{{>entryfield}}
+              </div>
+              <div class="draggable span6 area_edit ui-widget-content ui-draggable" id="result"></div>
+            </div>
+          </div>
+        </div>
+  	</div>
+  	<footer>
+        <div class="span12 botonera">
+          <button class="btn btn-inverse btn-large" id="remove">+</button>
+        </div>
+  	</footer>
+</body>
+
+<!-- Creating the template of entryfield -->
+<template name="entryfield">	
+	<textarea class="span6 area_edit" id="code">
+    	<h1>Hello World!</h1>{{room}}
+    </textarea>
+</template>
